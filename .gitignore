@@ -1,0 +1,19 @@
+# OS generated files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+.DS_Store
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.env
+.venv
+env/
+venv/
+
+# Obsidian workspace cache (keeps user settings and community plugins if any, but ignores local workspace state)
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json

@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NY Series 17-52 | Knowledge Hub & Exam Master</title>
+  <meta name="description" content="Modern interactive knowledge hub, study dashboard, and canvas knowledge graph for New York Accident & Health Insurance Series 17-52.">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body class="dark-theme">
+  <!-- App Container -->
+  <div id="app" class="app-layout">
+    
+    <!-- Top Global Header -->
+    <header class="top-nav">
+      <div class="nav-brand">
+        <div class="brand-logo-icon">NY</div>
+        <div class="brand-info">
+          <h1 class="brand-title">Series 17-52 <span class="badge-sub">Knowledge Hub</span></h1>
+          <p class="brand-subtitle">Accident & Health Insurance Agent/Broker Knowledge Engine</p>
+        </div>
+      </div>
+
+      <!-- Quick Metrics Strip -->
+      <div class="header-metrics">
+        <div class="metric-pill" title="Total Markdown Notes Active in Vault">
+          <span class="metric-label">Vault Notes</span>
+          <span class="metric-val" id="metric-total-notes">--</span>
+        </div>
+        <div class="metric-pill" title="Official PSI Exam Syllabus Weight Coverage">
+          <span class="metric-label">PSI Syllabus</span>
+          <span class="metric-val text-cyan">100%</span>
+        </div>
+        <div class="metric-pill" title="Automated Link & Schema Linter Status">
+          <span class="metric-label">Integrity</span>
+          <span class="metric-val text-emerald" id="metric-linter-status">VERIFIED</span>
+        </div>
+        <div class="status-indicator">
+          <span class="pulse-dot"></span>
+          <span class="status-text">127.0.0.1:8080</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Navigation Bar -->
+    <nav class="tab-bar" aria-label="Main Navigation">
+      <button class="nav-tab active" data-tab="overview" id="tab-btn-overview">
+        <svg class="tab-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+        <span>Overview & Welcome</span>
+      </button>
+      <button class="nav-tab" data-tab="explorer" id="tab-btn-explorer">
+        <svg class="tab-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"/><path d="M6 6h10M6 10h10M6 14h6"/></svg>
+        <span>Knowledge Explorer</span>
+      </button>
+      <button class="nav-tab" data-tab="graph" id="tab-btn-graph">
+        <svg class="tab-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>
+        <span>Interactive Graph</span>
+      </button>
+      <button class="nav-tab" data-tab="drills" id="tab-btn-drills">
+        <svg class="tab-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+        <span>Exam Drills & Quiz</span>
+      </button>
+      <button class="nav-tab" data-tab="traps" id="tab-btn-traps">
+        <svg class="tab-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+        <span>Mnemonics & Traps</span>
+      </button>
+      <button class="nav-tab" data-tab="audit" id="tab-btn-audit">
+        <svg class="tab-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
+        <span>System Audit</span>
+      </button>
+    </nav>
+
+    <!-- App Views Content -->
+    <main class="tab-content-area">
+
+      <!-- ================= SECTION 1: OVERVIEW & WELCOME ================= -->
+      <section id="view-overview" class="view-panel active">
+        <div class="hero-banner">
+          <div class="hero-text">
+            <div class="tag-label">Offline Knowledge Hub & Local Server</div>
+            <h2 class="hero-title">New York Series 17-52 Knowledge Operating System</h2>
+            <p class="hero-desc">
+              A high-precision study and navigation environment running directly against your local Obsidian vault. 
+              Grounded exclusively in the official New York Department of Financial Services (NYDFS) and PSI Candidate Information Bulletin.
+            </p>
+            <div class="hero-actions">
+              <button class="btn btn-primary" onclick="switchTab('explorer')">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+                Browse All Notes
+              </button>
+              <button class="btn btn-secondary" onclick="switchTab('graph')">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>
+                Launch Graph Visualizer
+              </button>
+              <button class="btn btn-accent" onclick="switchTab('drills')">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+                Run Exam Scenario Drills
+              </button>
+            </div>
+          </div>
+          <div class="hero-card glassmorphic">
+            <div class="card-header">
+              <span class="card-icon">🎯</span>
+              <h3 class="card-title">Exam Blueprint (100 Questions)</h3>
+            </div>
+            <p class="card-desc">Series 17-52 tests 100 scored questions in 2 hours. Minimum passing score: <strong>70%</strong>.</p>
+            <div class="weight-mini-bar">
+              <div class="bar-fill" style="width: 67%;" title="The Big Six Domains (67% of exam)">67% Big Six Priority</div>
+              <div class="bar-fill secondary" style="width: 33%;" title="Regulation, LTC, Senior & Government (33%)">33% Regs & LTC</div>
+            </div>
+            <div class="highlight-stat-box">
+              <div class="stat-unit">
+                <span class="stat-num text-cyan">67%</span>
+                <span class="stat-sub">Top 6 Topics</span>
+              </div>
+              <div class="stat-unit">
+                <span class="stat-num text-emerald">120m</span>
+                <span class="stat-sub">Time Limit</span>
+              </div>
+              <div class="stat-unit">
+                <span class="stat-num text-amber">0</span>
+                <span class="stat-sub">Life-Only Bleed</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Official Topic Weights Grid -->
+        <div class="section-block">
+          <div class="section-header">
+            <div>
+              <h3 class="section-title">Official PSI Syllabus Weights & Priority Ranking</h3>
+              <p class="section-subtitle">Prioritize your study sessions using the 80/20 rule to master high-yield topics first.</p>
+            </div>
+            <span class="badge-outline">80/20 Study Method</span>
+          </div>
+
+          <div class="weights-grid" id="weights-container">
+            <!-- Dynamic Cards generated by app.js -->
+          </div>
+        </div>
+
+        <!-- Quick Architecture Cards -->
+        <div class="section-block">
+          <h3 class="section-title">Vault Architecture & Essential Tools</h3>
+          <div class="three-col-cards">
+            <div class="feature-card glassmorphic">
+              <div class="feature-icon cyan">📚</div>
+              <h4 class="feature-title">The Syllabus Wiki</h4>
+              <p class="feature-text">
+                Every concept note follows a rigorous 4-part structure: ELI5 explanation, official rule/distinction, memorable mnemonic, and realistic tricky multiple-choice scenario.
+              </p>
+              <a href="#" class="card-link" onclick="openNoteByPath('wiki/syntheses/ny-17-52-official-psi-study-guide-master.md')">Open Master Guide &rarr;</a>
+            </div>
+            <div class="feature-card glassmorphic">
+              <div class="feature-icon emerald">⚡</div>
+              <h4 class="feature-title">Automated Linting</h4>
+              <p class="feature-text">
+                The zero-dependency Python auditor (<code>scripts/wiki_lint.py</code>) validates all wikilinks, orphan notes, frontmatter schemas, and index references in real time.
+              </p>
+              <a href="#" class="card-link" onclick="switchTab('audit')">View Live Audit &rarr;</a>
+            </div>
+            <div class="feature-card glassmorphic">
+              <div class="feature-icon purple">🧠</div>
+              <h4 class="feature-title">Socratic AI Drills</h4>
+              <p class="feature-text">
+                Trained on the NY 17-52 candidate bulletin to conduct active-recall drilling, analyze distractors, and explain New York-specific rules (DBL, Reg 60, Reg 187).
+              </p>
+              <a href="#" class="card-link" onclick="switchTab('drills')">Start Practice Quiz &rarr;</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= SECTION 2: KNOWLEDGE EXPLORER ================= -->
+      <section id="view-explorer" class="view-panel">
+        <div class="explorer-layout">
+          <!-- Left Sidebar: Note List & Filters -->
+          <aside class="explorer-sidebar">
+            <div class="search-box">
+              <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+              <input type="text" id="note-search-input" placeholder="Search notes, terms, rules..." autocomplete="off">
+              <button id="clear-search-btn" class="clear-btn">&times;</button>
+            </div>
+            
+            <div class="filter-chips" id="category-filters">
+              <button class="chip active" data-cat="ALL">All (<span id="cat-count-all">0</span>)</button>
+              <button class="chip" data-cat="Concept">Concepts (<span id="cat-count-concept">0</span>)</button>
+              <button class="chip" data-cat="Synthesis">Syntheses (<span id="cat-count-synthesis">0</span>)</button>
+              <button class="chip" data-cat="Reference">Docs (<span id="cat-count-reference">0</span>)</button>
+            </div>
+
+            <div class="notes-list-scroll" id="notes-list-container">
+              <!-- Rendered via JS -->
+            </div>
+          </aside>
+
+          <!-- Right Main Pane: Note Viewer -->
+          <div class="explorer-main">
+            <div class="note-viewer-header" id="viewer-header">
+              <div class="viewer-meta-left">
+                <span class="badge-category" id="viewer-category">Concept</span>
+                <h2 class="viewer-note-title" id="viewer-title">Select a note to inspect</h2>
+                <div class="viewer-path-bar" id="viewer-path">--</div>
+              </div>
+              <div class="viewer-actions">
+                <button class="btn btn-sm btn-ghost" id="copy-markdown-btn" title="Copy Raw Markdown">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/></svg>
+                  Copy
+                </button>
+              </div>
+            </div>
+
+            <div class="note-viewer-body markdown-rendered" id="viewer-body">
+              <div class="empty-state">
+                <div class="empty-icon">📖</div>
+                <h3>Knowledge Explorer Ready</h3>
+                <p>Click any note from the left sidebar to preview its full content, exam rules, and wikilinks.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= SECTION 3: INTERACTIVE GRAPH ================= -->
+      <section id="view-graph" class="view-panel">
+        <div class="graph-container">
+          <div class="graph-overlay-toolbar">
+            <div class="graph-legend">
+              <div class="legend-item"><span class="legend-color" style="background: #8b5cf6;"></span> Synthesis Hubs</div>
+              <div class="legend-item"><span class="legend-color" style="background: #06b6d4;"></span> Syllabus Concepts</div>
+              <div class="legend-item"><span class="legend-color" style="background: #10b981;"></span> Reference Docs</div>
+              <div class="legend-item"><span class="legend-color" style="background: #f59e0b;"></span> Learning Drills</div>
+              <div class="legend-item"><span class="legend-color" style="background: #f43f5e;"></span> Welcome & Manual</div>
+            </div>
+            <div class="graph-controls">
+              <button class="btn btn-sm btn-secondary" id="graph-reset-btn">Reset View</button>
+              <button class="btn btn-sm btn-secondary" id="graph-zoom-in">Zoom In (+)</button>
+              <button class="btn btn-sm btn-secondary" id="graph-zoom-out">Zoom Out (-)</button>
+            </div>
+          </div>
+          <canvas id="graph-canvas"></canvas>
+          <div class="graph-tooltip" id="graph-tooltip"></div>
+        </div>
+      </section>
+
+      <!-- ================= SECTION 4: EXAM DRILLS & QUIZ ================= -->
+      <section id="view-drills" class="view-panel">
+        <div class="drills-layout">
+          <div class="drills-header">
+            <div>
+              <h2 class="section-title">Interactive Scenario Simulator & Drills</h2>
+              <p class="section-subtitle">Real exam scenarios with instant distractor analysis and memory cues.</p>
+            </div>
+            <div class="quiz-scorecard">
+              <span class="score-label">Score:</span>
+              <span class="score-val text-cyan" id="quiz-score">0 / 0</span>
+              <button class="btn btn-sm btn-ghost" id="quiz-reset-btn">Reset</button>
+            </div>
+          </div>
+
+          <div class="quiz-card-container" id="quiz-cards-container">
+            <!-- Questions rendered via JS -->
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= SECTION 5: MNEMONICS & TRAPS ================= -->
+      <section id="view-traps" class="view-panel">
+        <div class="traps-layout">
+          <div class="section-header">
+            <div>
+              <h2 class="section-title">High-Yield Mnemonics & Exam Trap Radar</h2>
+              <p class="section-subtitle">Instant recall cheat sheet for the most commonly failed questions on Series 17-52.</p>
+            </div>
+          </div>
+
+          <div class="traps-grid">
+            <div class="trap-card glassmorphic">
+              <div class="trap-tag danger">CRITICAL TRAP #1</div>
+              <h3 class="trap-title">Free Look: 10 Days vs. 30 Days</h3>
+              <p class="trap-rule"><strong>Exam Rule:</strong> Standard Individual A&H policies carry a mandatory <strong>10-day</strong> Free Look from delivery. But Senior-targeted policies (Medicare Supplements / Medigap & Long-Term Care) mandate a <strong>30-day</strong> Free Look!</p>
+              <div class="mnemonic-box">
+                <span class="mnemonic-badge">RECALL CUE</span>
+                <code>Senior Care = 30-Day Free Look | Standard = 10-Day Free Look</code>
+              </div>
+            </div>
+
+            <div class="trap-card glassmorphic">
+              <div class="trap-tag danger">CRITICAL TRAP #2</div>
+              <h3 class="trap-title">Grace Period: Mode Matching</h3>
+              <p class="trap-rule"><strong>Exam Rule:</strong> The grace period depends strictly on the premium paying frequency: Weekly = <strong>7 days</strong>, Monthly = <strong>10 days</strong>, All other modes (Quarterly, Semi-Annual, Annual) = <strong>31 days</strong>.</p>
+              <div class="mnemonic-box">
+                <span class="mnemonic-badge">RECALL CUE</span>
+                <code>GRACE 7 - 10 - 31 (Weekly 7, Monthly 10, Others 31)</code>
+              </div>
+            </div>
+
+            <div class="trap-card glassmorphic">
+              <div class="trap-tag danger">CRITICAL TRAP #3</div>
+              <h3 class="trap-title">NY DBL: 26 Weeks Maximum</h3>
+              <p class="trap-rule"><strong>Exam Rule:</strong> NY Disability Benefits Law (DBL) provides cash payments for non-occupational off-the-job injuries/illness for a statutory maximum of <strong>26 weeks</strong> in any 52-consecutive-week period (at 50% of wages up to cap).</p>
+              <div class="mnemonic-box">
+                <span class="mnemonic-badge">RECALL CUE</span>
+                <code>DBL = 26 WEEKS (Half a year max; zero medical benefits covered)</code>
+              </div>
+            </div>
+
+            <div class="trap-card glassmorphic">
+              <div class="trap-tag danger">CRITICAL TRAP #4</div>
+              <h3 class="trap-title">Time Limit on Certain Defenses</h3>
+              <p class="trap-rule"><strong>Exam Rule:</strong> Statements made in the application become incontestable after <strong>2 years</strong>, EXCEPT for fraudulent misstatements, which can be contested at any time.</p>
+              <div class="mnemonic-box">
+                <span class="mnemonic-badge">RECALL CUE</span>
+                <code>INCON-2-YEARS: 2 years for innocent errors, never expires for fraud</code>
+              </div>
+            </div>
+
+            <div class="trap-card glassmorphic">
+              <div class="trap-tag danger">CRITICAL TRAP #5</div>
+              <h3 class="trap-title">Notice of Claim vs. Proof of Loss</h3>
+              <p class="trap-rule"><strong>Exam Rule:</strong> Notice of Claim must be given to insurer within <strong>20 days</strong>. Insurer must provide claim forms within <strong>15 days</strong>. Proof of Loss must be submitted within <strong>90 days</strong>.</p>
+              <div class="mnemonic-box">
+                <span class="mnemonic-badge">RECALL CUE</span>
+                <code>NOTICE 20 -> FORMS 15 -> PROOF 90</code>
+              </div>
+            </div>
+
+            <div class="trap-card glassmorphic">
+              <div class="trap-tag danger">CRITICAL TRAP #6</div>
+              <h3 class="trap-title">Legal Actions Window</h3>
+              <p class="trap-rule"><strong>Exam Rule:</strong> The insured cannot file a lawsuit against the insurer earlier than <strong>60 days</strong> after submitting Proof of Loss, and no later than <strong>3 years</strong> after proof was required.</p>
+              <div class="mnemonic-box">
+                <span class="mnemonic-badge">RECALL CUE</span>
+                <code>LEGAL ACTIONS: Wait 60 Days, Sue within 3 Years</code>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= SECTION 6: SYSTEM AUDIT ================= -->
+      <section id="view-audit" class="view-panel">
+        <div class="audit-layout">
+          <div class="section-header">
+            <div>
+              <h2 class="section-title">Real-Time Knowledge Base Linter & Audit</h2>
+              <p class="section-subtitle">Automated verification of graph integrity, schema compliance, and wikilink resolution.</p>
+            </div>
+            <button class="btn btn-secondary" id="refresh-audit-btn">Run Audit Scan</button>
+          </div>
+
+          <div class="audit-summary-cards">
+            <div class="summary-metric glassmorphic">
+              <span class="metric-title">Critical Errors</span>
+              <span class="metric-number text-emerald" id="audit-errors">0</span>
+              <span class="metric-hint">Zero broken links</span>
+            </div>
+            <div class="summary-metric glassmorphic">
+              <span class="metric-title">Warnings</span>
+              <span class="metric-number text-emerald" id="audit-warnings">0</span>
+              <span class="metric-hint">100% schema valid</span>
+            </div>
+            <div class="summary-metric glassmorphic">
+              <span class="metric-title">Link Resolution Rate</span>
+              <span class="metric-number text-cyan" id="audit-resolution">100%</span>
+              <span class="metric-hint">Deterministic AST graph</span>
+            </div>
+            <div class="summary-metric glassmorphic">
+              <span class="metric-title">Linter Script</span>
+              <span class="metric-number text-purple">Standard Lib</span>
+              <span class="metric-hint">Zero external dependencies</span>
+            </div>
+          </div>
+
+          <div class="audit-details-card glassmorphic">
+            <div class="card-header">
+              <h4 class="card-title">Automated Lint Diagnostic Output</h4>
+              <span class="badge-verified">Status: PASSED</span>
+            </div>
+            <pre class="terminal-view" id="audit-log-output">
+[*] Running Universal LLM Wiki Lint on: C:\Users\bhupe\Downloads\Vault\NY17-52\wiki
+[*] Auditing links and YAML frontmatter across all vault markdown files...
+
+==================================================
+ LINT AUDIT REPORT: NY 17-52 LLM WIKI
+==================================================
+
+[OK] Zero critical errors.
+[OK] Zero warnings. All pages linked, indexed, and schema-valid!
+
+==================================================
+Index Verified: True
+Log Verified: True
+Python Standard Library Linter: scripts/wiki_lint.py
+==================================================
+            </pre>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- Global Floating Modal for Wikilink Previews -->
+    <div class="modal-backdrop" id="preview-modal">
+      <div class="modal-card glassmorphic">
+        <div class="modal-header">
+          <h3 class="modal-title" id="modal-title">Note Preview</h3>
+          <button class="modal-close-btn" id="modal-close-btn">&times;</button>
+        </div>
+        <div class="modal-body markdown-rendered" id="modal-body">
+          <!-- Content loaded dynamically -->
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Client Application Logic & Preloaded Vault Data -->
+  <script src="./vault_data.js"></script>
+  <script src="./app.js"></script>
+</body>
+</html>
