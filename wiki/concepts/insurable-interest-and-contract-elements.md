@@ -63,6 +63,8 @@ An insurance policy is a legally enforceable contract governed by general contra
    - Creditor in the life of a debtor (only up to the amount of the debt).
    - Employer in the life of a Key Employee (Key Person Life).
    - Business partners in each other's lives (Buy-Sell Agreements).
+4. **Third-Party Applicant Naming Themselves Beneficiary**:
+   - When an applicant applies for life insurance on another individual and names **themselves** as beneficiary, **insurable interest must be affirmatively proven at the time of application**. Without legitimate financial or emotional dependence, the policy is an illegal wagering contract.
 
 ---
 
@@ -86,10 +88,15 @@ An insurance policy is a legally enforceable contract governed by general contra
 >
 > **Exam Pitfall 3**: "Can an applicant buy a $1,000,000 policy on their neighbor or casual friend?"
 > No! Lacks love/affection or economic dependence; deemed an illegal wager.
+>
+> **Exam Pitfall 4**: "In which scenario must insurable interest be affirmatively established at application?"
+> Distractor: "When the applicant and insured are the same person." -> **WRONG!** Inherent.
+> **Correct**: **When a third-party applicant names themselves as beneficiary.**
 
 ---
 
 ## 7. Cross-References
-- Related Concepts: [[standard-life-policy-provisions-and-riders]], [[mandatory-and-optional-health-provisions]]
+- Related Concepts: [[standard-life-policy-provisions-and-riders]], [[mandatory-and-optional-health-provisions]], [[underwriting-principles-risk-classification-and-policy-delivery]]
+- Practice Question Audit: [[underwriting-and-policy-delivery-practice-audit]]
 - Regulatory Entity: [[new-york-state-department-of-financial-services]]
-- Source Dossier: [[SRC-001-nys-dfs-ny-17-52-content-outline]]
+- Source Dossier: [[SRC-001-nys-dfs-ny-17-52-content-outline]], [[SRC-006-aila-practice-questions-underwriting-field-delivery]]

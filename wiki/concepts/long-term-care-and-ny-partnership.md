@@ -68,7 +68,7 @@ To trigger benefits under a tax-qualified LTC policy, a physician must certify t
 
 ## 6. Exam Trap Question & Distractor Analysis
 
-> **Scenario**: Under a tax-qualified Long-Term Care insurance policy in New York, which of the following is considered an official trigger for benefit payments?
+> **Scenario 1**: Under a tax-qualified Long-Term Care insurance policy in New York, which of the following is considered an official trigger for benefit payments?
 > - A) Inability to perform at least 1 Activity of Daily Living (ADL).
 > - B) Inability to perform at least 2 Activities of Daily Living (ADLs) or severe cognitive impairment.
 > - C) Inability to drive a motor vehicle and cook meals.
@@ -78,9 +78,19 @@ To trigger benefits under a tax-qualified LTC policy, a physician must certify t
 > - **Rationale**: Tax-qualified LTC policies require the inability to perform at least 2 of the 6 recognized ADLs (bathing, continence, dressing, eating, toileting, transferring) or severe cognitive impairment (such as Alzheimer's). Driving and cooking are Instrumental Activities of Daily Living (IADLs), which do not trigger core LTC benefits.
 > - **Tempting Wrong Answer**: **A** is tempting if you forget that at least **2 ADLs** are required.
 
+> **Scenario 2**: What peril is primarily covered by a Long-Term Care policy?
+> - Distractor: "Accident" or "Illness" -> **WRONG!**
+> - **Correct Answer**: **Aging** (chronic functional deterioration requiring custodial assistance). Acute illness and accidents are the domain of major medical insurance.
+
+> **Scenario 3**: Which LTC benefit specifically provides temporary relief to unpaid family caregivers?
+> - Distractor: "Convalescent care" or "Hospital indemnity" -> **WRONG!**
+> - **Correct Answer**: **Respite Care** (pays for a substitute caregiver to give family members a temporary break).
+
 ---
 
 ## 7. Cross-References
 - Government Programs: [[medicare-vs-medicaid-vs-medigap]]
 - Provisions: [[mandatory-and-optional-health-provisions]]
-- Outline Source: [[SRC-002-nys-dfs-psi-series-17-52-accident-health-outline]]
+- Underwriting & Policy Delivery: [[underwriting-principles-risk-classification-and-policy-delivery]]
+- Practice Question Audit: [[underwriting-and-policy-delivery-practice-audit]]
+- Outline Source: [[SRC-002-nys-dfs-psi-series-17-52-accident-health-outline]], [[SRC-006-aila-practice-questions-underwriting-field-delivery]]

@@ -101,3 +101,40 @@ Chronological, append-only record of all wiki system operations, ingestions, aud
 - **Pages Updated**:
   - `wiki/index.md`: Registered `SRC-005` and `ny-rules-exam-traps-and-speed-method`.
 - **Validation**: Executed `python scripts/wiki_lint.py` confirming 0 broken links, 0 orphans, and 100% schema integrity across 38 audited notes.
+
+---
+
+## [2026-10-28] ingest | SRC-006: Underwriting, Field Delivery & Policy Mechanics Empirical Practice Set
+- **Operation**: Ingested authentic batch of 19 AiLA / PSI-Prometric practice question vignettes with empirical student selection distributions, timing data, and distractor breakdowns. Codified complete underwriting process (application as primary source, MIB impairment codes, APS triggers, FCRA inspection reports), Gross Premium formula (`Risk + Expense - Interest`), Morbidity vs. Mortality tables, risk classifications (Preferred, Standard, Substandard/Rated), field delivery duties (prepaid vs. non-prepaid), Free Look trigger dates (delivery date), post-issue occupation rules (Life remains in effect as issued vs. Disability adjustments), Viatical Settlement federal tax rules (24 months / 2 yrs vs 5 yrs distractor), and Long-Term Care essentials (aging peril, respite care).
+- **Sources Ingested**:
+  - `[[SRC-006-aila-practice-questions-underwriting-field-delivery]]`: Practice question set with empirical performance percentages and explanations.
+  - Raw archive saved to `raw/documents/SRC-006-aila-practice-questions-underwriting-field-delivery.md`.
+- **Pages Created**:
+  - `wiki/sources/SRC-006-aila-practice-questions-underwriting-field-delivery.md`: Source dossier.
+  - `wiki/concepts/underwriting-principles-risk-classification-and-policy-delivery.md`: Comprehensive core concept note on underwriting sources, premium formulas, risk tiers, and policy delivery.
+  - `wiki/questions/underwriting-and-policy-delivery-practice-audit.md`: Detailed 19-vignette practice audit with distractor breakdowns, root-cause analyses, and test-day memory hooks.
+- **Pages Updated**:
+  - `wiki/concepts/insurable-interest-and-contract-elements.md`: Codified third-party applicant beneficiary rules.
+  - `wiki/concepts/standard-life-policy-provisions-and-riders.md`: Codified post-issue occupation change rules and convertible term privilege.
+  - `wiki/concepts/long-term-care-and-ny-partnership.md`: Highlighted the peril of aging and respite care caregiver relief benefits.
+  - `wiki/questions/high-yield-practice-question-bank-and-trap-analysis.md`: Linked dedicated practice question audit.
+  - `wiki/index.md`: Registered SRC-006, underwriting concept note, and practice audit note.
+- **Validation**: Executed `python scripts/wiki_lint.py` and `python scripts/export_static_data.py`.
+
+---
+
+## [2026-10-28] ingest | SRC-007: GMetrix & Proficiency Five-Module Curriculum Ingestion
+- **Operation**: Ingested and structured the 5-module Accident & Health curriculum (Field Underwriting, Other Insurance Concepts, Policy Provisions/Clauses/Riders, Social Insurance, Types of Policies) based on GMetrix Program 268 / NYDFS testing specifications. Developed complete master study guide, 9-column uniform provisions matrix, one-page master cram sheet, comparative analysis matrices, 30-question adaptive diagnostic exam, and 35-card CSV flashcard deck.
+- **Sources Ingested**:
+  - `[[SRC-007-gmetrix-proficiency-ny-17-52-five-modules]]`: GMetrix Program 268 & NYDFS Accident & Health Curriculum.
+  - Raw archive saved to `raw/documents/SRC-007-gmetrix-proficiency-ny-17-52-five-modules.md`.
+- **Pages Created**:
+  - `wiki/sources/SRC-007-gmetrix-proficiency-ny-17-52-five-modules.md`: Source dossier.
+  - `wiki/syntheses/ny-17-52-five-module-master-study-guide.md`: Comprehensive 5-module master study guide.
+  - `wiki/syntheses/ny-17-52-one-page-master-cheat-sheet.md`: High-yield one-page ASCII cram sheet.
+  - `wiki/comparisons/ny-17-52-master-comparison-matrices.md`: Multi-dimensional comparison matrices.
+  - `wiki/questions/ny-17-52-30-question-adaptive-diagnostic-test.md`: 30-question diagnostic exam with answer key and distractor analysis.
+  - `Learning/flashcards-ny-17-52-five-modules.csv`: 35 CSV flashcards for Anki/spreadsheet study.
+- **Pages Updated**:
+  - `wiki/index.md`: Registered all 5 newly created assets.
+- **Validation**: Executed `python scripts/wiki_lint.py` and `python scripts/export_static_data.py`.

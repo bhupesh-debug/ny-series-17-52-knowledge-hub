@@ -105,7 +105,12 @@ This question bank provides authentic, exam-style practice questions covering th
 
 ---
 
-## 3. Question Error Logging Procedure
+## 3. Dedicated Question Audits & Error Logs
+- [[underwriting-and-policy-delivery-practice-audit]]: Comprehensive 19-question empirical audit from AiLA/PSI practice sets covering underwriting sources, FCRA inspection reports, MIB, Gross Premium calculation, risk classifications, policy delivery duties, viatical settlements, and LTC respite benefits.
+
+---
+
+## 4. Question Error Logging Procedure
 When studying with this vault:
 1. Copy the template from `templates/template-question-error-log.md`.
 2. Save the note in `wiki/questions/q-<topic>-<number>.md`.

@@ -77,10 +77,17 @@ Dividends are a return of unearned premium; **not taxable as income**.
 - **Accidental Death Benefit (Double Indemnity)**: Pays double (or triple) face amount if death occurs as a direct result of an accident within **90 days** of the accident. Does not apply to suicide, war, or illness.
 - **Accelerated Death Benefit (Living Needs Rider)**: Advances up to 50% to 100% of death benefit if insured is diagnosed with a terminal illness with life expectancy of 24 months or less. Benefit paid tax-free; remaining death benefit is reduced by amount paid.
 
+### 6.1 Policy Features & Post-Issue Status Rules
+- **Convertible Term Privilege**: Allows the policyowner to convert term insurance into a permanent cash value policy (e.g., whole life) **WITHOUT evidence of insurability** (no medical exam). Highly valuable for individuals whose health deteriorates after issue.
+- **Change of Occupation Rule in Life Insurance**: Once a life insurance policy is issued, it **REMAINS IN EFFECT AS ISSUED** regardless of future career changes. If the insured switches from a desk job (librarian) to an ultra-hazardous occupation (rodeo bull rider), the insurer **cannot** cancel coverage, raise premiums, or reduce death benefits! *(Contrast with Disability Income policies, which adjust benefits/premiums upon occupation change).*
+
 ---
 
 ## 7. Cross-References
 - Foundational Concept: [[insurable-interest-and-contract-elements]]
+- Underwriting & Policy Delivery: [[underwriting-principles-risk-classification-and-policy-delivery]]
 - Policy Architecture: [[term-vs-whole-life-vs-universal-life]]
 - New York Replacement Rules: [[new-york-insurance-regulation-60-replacement]]
+- Practice Question Audit: [[underwriting-and-policy-delivery-practice-audit]]
 - Master Cram Sheet: [[ny-17-52-high-yield-exam-cram-sheet]]
+- Sources: [[SRC-001-nys-dfs-ny-17-52-content-outline]], [[SRC-006-aila-practice-questions-underwriting-field-delivery]]

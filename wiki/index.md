@@ -15,9 +15,12 @@
 - [[SRC-003-psi-current-bulletin-ny-17-52-ah-study-guide]]: Current PSI Candidate Information Bulletin (7228) and NYDFS Rules: Series 17-52 Accident & Health Study Guide (11 official topics and weights totaling 100%).
 - [[SRC-004-ny-17-52-the-big-six-priority-framework]]: The Big Six Priority Study Framework for Series 17-52 (Medical Plans, Basics, Provisions, Disability, ACA, Group - 67% Combined Weight).
 - [[SRC-005-ny-rules-and-exam-traps-speed-method]]: New York Rules, Exam Traps & Fast Question Method (Series 17-52).
+- [[SRC-006-aila-practice-questions-underwriting-field-delivery]]: AiLA Exam Practice Set: Underwriting, Field Delivery & Policy Mechanics (19 empirical questions, distractor traps, and candidate stats).
+- [[SRC-007-gmetrix-proficiency-ny-17-52-five-modules]]: GMetrix & Proficiency Curriculum: NY Series 17-52 Accident & Health Five Modules.
 
 ### 3. Core Insurance Concepts (`wiki/concepts/`)
 - [[general-insurance-concepts-and-contract-law]]: Pure vs. speculative risk, peril vs. hazard, ARRTS risk management, contract characteristics (adhesion, aleatory, unilateral), warranties vs. representations, waiver & estoppel.
+- [[underwriting-principles-risk-classification-and-policy-delivery]]: Application as primary source, MIB impairment codes, APS, Inspection Reports (FCRA), Gross Premium formula (Risk + Expense - Interest), Morbidity vs. Mortality tables, risk tiers (Preferred, Standard, Substandard/Rated), field delivery protocols (prepaid vs. non-prepaid), Free Look trigger dates, post-issue occupation changes (Life vs. Disability), and Viatical Settlements (tax-free under 24 months / 2 yrs).
 - [[accident-and-health-insurance-basics-and-limited-policies]]: Peril vs. loss, comprehensive vs. limited, hospital indemnity, specified disease, exclusions, medical necessity, and producer sales/delivery/E&O.
 - [[medical-plans-cost-sharing-managed-care]]: Fee-for-service, benefit schedule, major medical, HMO, PPO, EPO, POS, cost-sharing calculations (deductibles, coinsurance, stop-loss), utilization review, and pure community rating.
 - [[individual-health-policy-provisions-and-renewability]]: Mandatory provisions (entire contract, grace periods 7-10-31, reinstatement 10-day sickness wait, time limit on defenses 2 years, claims sequence 20-15-90-60-3), renewability spectrum (noncancelable, guaranteed renewable, conditionally renewable, optionally renewable, cancelable), and COB.
@@ -43,11 +46,14 @@
 ### 5. Comparative Analyses (`wiki/comparisons/`)
 - [[term-vs-whole-life-vs-universal-life]]: Architectural matrix comparing Term, Whole Life, and Universal Life.
 - [[medicare-vs-medicaid-vs-medigap]]: Detailed comparative matrix of Original Medicare (Parts A & B), Medicare Advantage (Part C), MediGap (Plans A-N, NY year-round open enrollment), and Medicaid nursing home spend-down rules.
+- [[ny-17-52-master-comparison-matrices]]: Master comparative matrices for terms, provisions, managed care (HMO/PPO/EPO/POS), social insurance (Workers' Comp vs. NY DBL vs. SSDI), and senior products.
 
 ### 6. Study Methods & Learning Systems (`wiki/methods/`)
 - [[active-recall-and-spaced-repetition-study-method]]: 4-stage study workflow, spaced repetition interval schedule, error taxonomy, and high-yield mnemonic indexing.
 
 ### 7. Syntheses & Cram Sheets (`wiki/syntheses/`)
+- [[ny-17-52-five-module-master-study-guide]]: Comprehensive master study guide organized by the 5 core modules (Field Underwriting, Other Concepts, Policy Provisions, Social Insurance, Types of Policies).
+- [[ny-17-52-one-page-master-cheat-sheet]]: Master one-page high-yield cram sheet of key definitions, provisions, distinctions, statutory deadlines, and mnemonics.
 - [[ny-rules-exam-traps-and-speed-method]]: New York Rules, Exam Traps & Fast Question Method (Series 17-52) featuring the 5-step strike method, 72-second pacing strategy, and one-minute recall sheet.
 - [[ny-17-52-the-big-six-first-pass-priority-guide]]: The Big Six First-Pass Priority Guide (67% Exam Weight) featuring D-C-C-M, N-G-C, E-then-B, Master/Certificate, P-M-T-E, Cause-Chance-Condition mnemonics and trap breakdowns.
 - [[ny-17-52-official-psi-study-guide-master]]: Master PSI Series 17-52 study guide synthesis, 11 official outline weights, plain-English explanations, real-world examples, exam rules, recall cues, tricky MCQs, NY vs. general comparative matrix, and "Strike & Solve" method.
@@ -56,4 +62,6 @@
 - [[ny-specific-state-insurance-laws-mastery]]: Deep dive into NY producer classifications (Agent vs. Broker vs. Consultant), 15-hr CE rules (3 hrs ethics), temporary licensing, and prohibited practices (rebating $25 gift rule, twisting, defamation, unfair claims).
 
 ### 8. Question Banks & Trap Analysis (`wiki/questions/`)
+- [[ny-17-52-30-question-adaptive-diagnostic-test]]: 30-question adaptive diagnostic exam across the 5 modules with full distractor breakdowns, psychometric rationale, and remediation keys.
 - [[high-yield-practice-question-bank-and-trap-analysis]]: Realistic exam vignettes with detailed distractor breakdowns, statutory explanations, and candidate error root cause analysis.
+- [[underwriting-and-policy-delivery-practice-audit]]: Comprehensive 19-question empirical audit from AiLA/PSI practice sets covering underwriting sources, FCRA inspection reports, MIB, Gross Premium calculation, risk classifications, policy delivery duties, viatical settlements, and LTC respite benefits.
